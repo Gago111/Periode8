@@ -1,0 +1,735 @@
+@import 'settings';
+@import url(http://nl.allfont.net/allfont.css?fonts=franklin-gothic-book);
+/*-------------------------------------------------
+Table of Css
+ 1.General
+ 2.Header
+ 3.Navbar
+ 4.Blok1
+ 5.Blok2
+ 6.Blok3
+ 7.Blok4
+ 8.Blok5
+ 9.Footer
+
+ 10.Page: Detonamissie
+ 11.Page: Inkoop
+ 12.Datavernieting
+ 13:Overons
+-------------------------------------------------*/
+
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+
+
+/*-------------------------------------------------*/
+/* 1. General
+/*-------------------------------------------------*/
+
+:focus {
+  outline-style:none;
+box-shadow:none;
+border-color:transparent;
+outline: none!important;
+}
+
+body {
+  height: 100%;
+}
+a {
+  color: #000;
+  font-family: 'Franklin Gothic Book', arial;
+  font-size: 16px;
+  &:hover {
+    color:$main-color;
+  }
+}
+
+.test .navbar-nav li.active > a {
+  color: #548DD4;
+}
+
+.active:active {
+  color: blue;
+}
+
+.nav-link:active , .activated {
+  color: blue;
+ }
+
+.navbar-toggler {
+  background: darkblue;
+  border-radius: 1px;
+  padding: 7px 10px;
+  background-color:$main-color;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
+  // font-weight:600;
+}
+
+.scrolled {
+  background-color: rgba(39,50,61,.70);
+}
+
+h3 {
+  font-size:25px;
+}
+
+h4 {
+  font-size:20.5px;
+}
+
+h5 {
+  font-size:16px;
+}
+
+p {
+  font-family: 'Franklin Gothic Book', arial;
+  font-size: 16px;
+  line-height:25px;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding:0;
+}
+
+.blue {
+  color:$main-color;
+}
+
+.bg-blue {
+  background-color:$main-color;
+}
+
+.yellow {
+  color:$secondary-color;
+}
+
+.bg-gray {
+  background-color:f8f8f8;
+}
+
+.fa-caret-right:before {
+    content: "\f0da";
+    color: $teritary-color;
+}
+
+
+.btn-outline-secondary {
+  color: #ffffffff!important;
+  margin-top: 16px;
+  padding: 6px 36px;
+  font-weight: 500;
+  font-size: 16px;
+  border: 2px solid $main-color;
+  text-transform: uppercase;
+  border-color: transparent;
+  position: relative;
+  background:$main-color;
+  display: inline-block;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color:#fff;
+    color:$main-color!important;
+  }
+}
+.btn-outline-primary {
+    color: #000;
+    margin-top: 16px;
+    padding: 6px 36px;
+    border-color: red;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: transparent;
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color:$main-color;
+    color:#ffffff!important;
+  }
+}
+
+/*-------------------------------------------------*/
+/* 2. Navbar
+/*-------------------------------------------------*/
+.navigation {
+  .vlaggen {
+    font-size:20px;
+    img {
+      width:22px;
+      margin-right:10px;
+    }
+  }
+  .social {
+    img {
+      width:23px;
+      margin-right:5px;
+    }
+    @media only screen and (max-width: 832px) {
+      span {
+        display:none;
+      }
+    }
+  }
+
+  .social-media {
+    i {
+      margin-right:10px;
+      color: #fff;
+      transition: 0.3;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 428px) {
+    .social-media {
+      display:none;
+    }
+  }
+
+
+  .scroll {
+    transition:0.3s;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+}
+
+img.navbrandx {
+  width:200px;
+}
+
+.navigation {
+  .NL,.EN,.DU{
+    &:before {
+      content:'|';
+      margin-right:5px;
+    }
+  }
+ .nav-link {
+   padding:20px 0px;
+   color:#ffffff;
+   font-family: 'Quicksand', sans-serif;
+ }
+ .nav-item  {
+   a {
+     position: relative;
+     text-decoration: none;
+     font-weight:500;
+     &:hover {
+       color: $main-color;
+     }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color:$main-color;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+    }
+   }
+ }
+ .nav-item  > a:hover:before {
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+ }
+}
+
+.icon-bar {
+	width: 22px;
+	height: 4px;
+	background-color: $main-color;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+
+.navbar-toggler .top-bar {
+ transform: rotate(45deg);
+ transform-origin: 10% 10%;
+
+}
+
+.navbar-toggler .middle-bar {
+ opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-43deg);
+  transform-origin: -19% 91%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+ transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+ opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+ transform: rotate(0);
+}
+
+
+/*-------------------------------------------------*/
+/* 3. Banner
+/*-------------------------------------------------*/
+
+.banner {
+  h1 {
+    padding-top: 126px;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .banner {
+    h1 {
+      padding-top: 126px;
+      font-size: 34px;
+    }
+  }
+}
+
+/*-------------------------------------------------*/
+/* 4. Blok1
+/*-------------------------------------------------*/
+
+@media only screen and (max-width: 760px) {
+  .blok1 {
+    p {
+      margin: 0px 12px 12px 12px;
+    }
+  }
+}
+
+/*-------------------------------------------------*/
+/* 5. Blok2
+/*-------------------------------------------------*/
+.blok2 {
+  margin:40px 30px;
+  img {
+    margin-bottom:10px;
+    width: 65px;
+  }
+  h4 {
+    color:$main-color;
+    text-align: left;
+  }
+  .fa-caret-right:before {
+    color: $teritary-color;
+    font-size:22px;
+  }
+  span {
+    color:$main-color;
+  }
+  .b4 {
+    p {
+      text-align: left;
+      margin-bottom:6px;
+        // &:before {
+        //   content: "\f0da";
+        //   font-family:"FontAwesome";
+        //   width: 36px;
+        //   color: $main-color;
+        //   position: absolute;
+        //   left: 0;
+        //   margin-right: 8px;
+        // }
+      }
+    }
+
+  h2 {
+    font-size:33px;
+    padding:10px 0px;
+    margin:0;
+  }
+  .box {
+    padding: 12px;
+    .fas {
+      font-size:60px;
+      margin-right:10px;
+    }
+  }
+}
+
+/*-------------------------------------------------*/
+/* 6. Blok3
+/*-------------------------------------------------*/
+
+.blok3 {
+  margin:40px 30px;
+  .service {
+    margin:25px 0px;
+    transition: all 0.3s ease-in-out;
+    img {
+      width:55px;
+      margin-bottom:16px;
+    }
+    .btn-outline-primary {
+      border-radius: 1px;
+      border: 1px solid $main-color;
+      color: $main-color;
+      font-size: 12px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color:$main-color;
+        color:#ffffffff;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .service {
+    &:hover {
+      h4 {
+        color:$main-color;
+      }
+    }
+  }
+}
+
+/*-------------------------------------------------*/
+/* 7. Blok4
+/*-------------------------------------------------*/
+
+.blok4 {
+  p {
+      line-height: 28px;
+  }
+  a {
+    text-decoration: underline;;
+  }
+}
+
+/*-------------------------------------------------*/
+/* 8. Blok5
+/*-------------------------------------------------*/
+.blok5 {
+  img {
+    width:30px;
+    margin:10px 20px;
+  }
+  .btn-outline-secondary {
+    color: #fff !important;
+    margin-top: 16px;
+    padding: 4px 31px;
+    font-size: 14px;
+    background-color: $teritary-color;
+    &:hover {
+      background-color:#fff;
+      color: #000!important;
+    }
+  }
+}
+
+/*-------------------------------------------------*/
+/* 9. Footer
+/*-------------------------------------------------*/
+.footer {
+  // background-image: url(../img/footerbg.png);
+  background-color: #ffffff;
+  padding:20px 0;
+  .vlaggen img {
+    width: 19px;
+    margin-right: 7px;
+    margin-top: 10px;
+  }
+  img.detona {
+    width:200px;
+  }
+  i {
+    font-size:15px;
+    margin-right: 10px;
+    transition: 0.3s;
+    &:hover {
+      color:$main-color;
+      cursor: pointer;
+    }
+  }
+  h5 {
+    font-size:20px;
+    color:$main-color;;
+  }
+  ul.secondUL {
+    p {
+      &:before {
+        content:'›';
+        margin-right:7px;
+      }
+    }
+  }
+
+  ul.menu {
+    li {
+      margin-bottom: 10px;
+      line-height: 24px;
+      padding: 0;
+    }
+  }
+  img.phone {
+    font-size: 20px;
+    width: 20px;
+    margin-right: 18px;
+  }
+}
+
+.fa-map-marker-alt:before {
+  font-size: 17px!important;
+  margin-right: 13px!important;
+  color: $secondary-color;
+}
+.fa-phone:before {
+  font-size: 17px!important;
+  margin-right: 13px!important;
+  color: $secondary-color;
+}
+.fa-envelope:before {
+  font-size: 17px!important;
+  margin-right: 6px!important;
+  color: $secondary-color;
+}
+.fa-phone-alt:before {
+  font-size: 17px !important;
+  margin-right: 8px !important;
+  color: $secondary-color;
+}
+
+
+/*-------------------------------------------------*/
+/* 10. DetonaMissie
+/*-------------------------------------------------*/
+
+.before {
+  padding-bottom: 5px;
+  p:before {
+    content: '';
+    display: block;
+    top: 61px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: $teritary-color;
+  }
+}
+
+/*-------------------------------------------------*/
+/* 11. Inkoop
+/*-------------------------------------------------*/
+
+section.process {
+  img {
+    width:50px;
+  }
+  p {
+    color: #ffffffff;
+  }
+  span {
+    position: absolute;
+    left: -99px;
+    right: 0px;
+    font-size: 15px;
+    color: #fff;
+  }
+  background-color: $main-color;
+  .step {
+    padding-top: 15px;
+  }
+}
+
+.contact-form {
+  .btn-outline-danger {
+    border-radius: 1px!important;
+    border-color:$main-color;
+    &:hover {
+      background-color: $main-color;
+      color:#ffffff;
+    }
+  }
+}
+
+@media only screen and (max-width: 5000px) {
+  .contact-form {
+    .textarea {
+      width:50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contact-form {
+    .name {
+      width:51.5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  .contact-form {
+    .name,#exampleInputEmail1,.textarea {
+      width:100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  .contact-form {
+    .name {
+      width:101.5%;
+    }
+  }
+}
+
+
+/*-------------------------------------------------*/
+/* 12. Datavernieting
+/*-------------------------------------------------*/
+.card {
+  border:1px;
+  .card-header {
+    padding: 5px 5px;
+    border-left: 1px solid $main-color;
+    border-right: 1px solid $main-color;
+    border-top: 1px solid $main-color;
+    transition: 0.4s;
+    h5 {
+      &:after {
+        content: "\f107";
+        font-family:"FontAwesome";
+        width: 10px;
+        color: $main-color;
+        position: absolute;
+        right: 0;
+        margin-right: 8px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $main-color;
+      &:hover {
+        button {
+          color: #fff;
+        }
+      }
+    }
+    &:first-child {
+        border-radius: 1px;
+    }
+    button {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+  #headingEight{
+    border-bottom: 1px solid $main-color;
+  }
+  .card-body {
+    background-color: $main-color!important;
+    color: #fff;
+    padding: 10px 0px 9px 18px;
+    &:hover {
+      cursor:pointer;
+    }
+  }
+  img {
+    width:32px;
+    margin-right: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .centa {
+    text-align:center;
+  }
+}
+
+/*-------------------------------------------------*/
+/* 13. Overons
+/*-------------------------------------------------*/
+
+.about {
+  li {
+    margin-bottom:10px;
+  }
+  .p-center {
+    padding-top: 72px;
+    padding-left: 35px;
+  }
+}
+
+.quote {
+  background-color: #548DD4;
+  padding: 13px 23px;
+  p {
+    color: #fff;
+    padding:23px 23px;
+    text-align: center;
+    font-size:23px;
+    margin:0px;
+    font-family: 'Playfair Display', serif;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .about {
+    .p-center {
+      padding-left:0px;
+      padding-top: 30px;
+    }
+  }
+
+}
