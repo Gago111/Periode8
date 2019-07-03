@@ -1,0 +1,177 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.min.css"/>
+
+  <title>Standaard navbar</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="container">
+      <div style="justify-content:center;" class="row text-center">
+        <div class="col-md-12 mt-2 text-center">
+          <h5 class="text-light">Pizzaria La Vita e Bella</h5>
+        </div>
+      </div>
+    </div> <!-- END container -->
+  </div> <!-- END bg-dark -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 mt-2">
+        <div id="cart"></div>
+        <input type="text" name="" placeholder="Tafel" value="">
+          <a href=""><button  onclick="deleteItems()" type="button" class="btn btn-outline-secondary mt-3 mb-3">Verstuur</button></a>
+      </div>
+
+
+      <div class="col-md-8">
+        <table class="table2">
+          <tr class="">
+            <th class="title1">Pizza's</th>
+            <th class="title2">Pasta's</th>
+            <th class="title3">Dranken</th>
+            <th class="title4">Kindermenu</th>
+          </tr>
+        </td>
+          <tr>
+            <td style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="Margarita" data-price="8.00" type="submit" href="#">Margarita</td></a>
+            <td style="border:2px solid #483D8B" class="text-center"><a class="sc-add-to-cart" data-name="Lasagna Carbonara" data-price="9.00" type="submit" href="#">Lasagna Carbonara</td></a>
+            <td style="border:2px solid #FFFF00" class="text-center"><a class="sc-add-to-cart" data-name="Frisdrank" data-price="2.00" type="submit" href="#">Frisdrank</td></a>
+            <td style="border:2px solid #9932CC" class="text-center"><a class="sc-add-to-cart" data-name="Kindermenu Pasta" data-price="7.50" type="submit" href="#">Kindermenu Pasta</td></a>
+          </tr>
+          <tr>
+            <td style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="Salami" data-price="8.00" type="submit" href="#">Salami</td></a>
+            <td style="border:2px solid #483D8B" class="text-center"><a class="sc-add-to-cart" data-name="Lasagna Veggie" data-price="10.00" type="submit" href="#">Lasagna Veggie</td></a>
+            <td style="border:2px solid #FFFF00" class="text-center"><a class="sc-add-to-cart" data-name="Bier" data-price="2.00" type="submit" href="#">Bier</td></a>
+            <td style="border:2px solid #9932CC" class="text-center"><a class="sc-add-to-cart" data-name="Kinderpasta" data-price="7.00" type="submit" href="#">Kinderpasta</td></a>
+          </tr>
+          <tr>
+            <td style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="Veggie" data-price="12.00" type="submit" href="#">Veggie</td></a>
+            <td style="border:2px solid #483D8B" class="text-center"><a class="sc-add-to-cart" data-name="Penne con Pestok" data-price="9.00" type="submit" href="#">Penne con Pestok</td></a>
+            <td style="border:2px solid #FFFF00" class="text-center"><a class="sc-add-to-cart" data-name="Huiswijn rood" data-price="3.00" type="submit" href="#">Huiswijn rood</td></a>
+          </tr>
+          <tr>
+            <td  style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="13.00" data-price="13.00" type="submit" href="#">Quattro Stagioni</td></a>
+            <td><td style="border:2px solid #FFFF00" class="text-center"><a class="sc-add-to-cart" data-name="Huiswijn wit" data-price="3.00" type="submit" href="#">Huiswijn wit</td></td></a>
+          </tr>
+          <tr>
+            <td style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="Quattro Formaggi" data-price="16.00" type="submit" href="#">Quattro Formaggi</td></a>
+            <td><td style="border:2px solid #FFFF00" class="text-center"><a class="sc-add-to-cart" data-name="Koffie" data-price="2.00" type="submit" href="#">Koffie</td></td></a>
+          </tr>
+          <tr>
+            <td style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="Carbonara Speciale" data-price="17.00" type="submit" href="#">Carbonara Speciale</td></a>
+            <td><td style="border:2px solid #FFFF00" class="text-center"><a class="sc-add-to-cart" data-name="Thee" data-price="2.00" type="submit" href="#">Thee</td></td></a>
+          </tr>
+          <tr>
+            <td style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="Calzone Salami" data-price="15.00" type="submit" href="#">Calzone Salami</td></a>
+          </tr>
+          <tr>
+            <td style="border:2px solid #ff6666" class="text-center"><a class="sc-add-to-cart" data-name="Calzone Formaggi" data-price="14.00" type="submit" href="#">Calzone Formaggi</td></a>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-md-12"> -->
+        <!-- <div class="quantity">
+          <input type="number" min="1" max="9" step="1" value="1">
+        </div> -->
+      <!--
+      </div>
+    </div> -->
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/shopping-card.js"></script>
+
+  <script>
+    jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+    jQuery('.quantity').each(function() {
+      var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+        btnUp.click(function() {
+          var oldValue = parseFloat(input.val());
+          if (oldValue >= max) {
+            var newVal = oldValue;
+          } else {
+            var newVal = oldValue + 1;
+          }
+          spinner.find("input").val(newVal);
+          spinner.find("input").trigger("change");
+        });
+
+        btnDown.click(function() {
+          var oldValue = parseFloat(input.val());
+          if (oldValue <= min) {
+            var newVal = oldValue;
+          } else {
+            var newVal = oldValue - 1;
+          }
+          spinner.find("input").val(newVal);
+          spinner.find("input").trigger("change");
+        });
+      });
+  </script>
+
+  <script>
+    function myFunction() {
+      confirm("Verstuur deze bestelling");
+    }
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('#cart').simpleCart();
+    });
+  </script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+  function deleteItems() {
+  localStorage.clear();
+  location.reload();
+}
+
+</script>
+
+
+ </body>
+</html>
